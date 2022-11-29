@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="DatabaseProjectB.Views.TruckModelTotalSalesForSelectedDateUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DatabaseProjectB.Views"
+             mc:Ignorable="d" 
+        d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" FontSize="20px" Grid.ColumnSpan="4" FontWeight="DemiBold" Content="Total Rental Sales of Truck Model" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <DataGrid Name="dataGrid"  Grid.Column="0" Margin="20px" GridLinesVisibility="None" Style="{DynamicResource DataGridStyle}" IsReadOnly="True" Grid.Row="2" Grid.ColumnSpan="6" Grid.RowSpan="8" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <DataGrid.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}"  Color="#f1faee"/>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}"  Color="Black"/>
+            </DataGrid.Resources>
+        </DataGrid>
+
+        <ComboBox Name="truckModelComboBox" Text="---Select Model----" IsEditable="True" IsReadOnly="True" Grid.Column="0" Grid.RowSpan="2" Width="120px" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <DatePicker Name="firstDatePicker" Grid.Column="1" Grid.RowSpan="2" Width="150px" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="3"/>
+        <DatePicker Name="secondDatePicker" Grid.Column="2" Grid.RowSpan="2" Width="150px" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Grid.ColumnSpan="4" />
+
+        <Button Name="searchButton" Background="#457b9d" Foreground="White" Height="22px" Width="70px" Content="Search" Grid.Column="4" Grid.RowSpan="2"  HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="97,27,0,0" Grid.ColumnSpan="2" RenderTransformOrigin="0.448,0.131" Click="searchButton_Click"/>
+
+    </Grid>
+</UserControl>

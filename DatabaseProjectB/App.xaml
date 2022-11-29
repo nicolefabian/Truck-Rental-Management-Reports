@@ -1,0 +1,46 @@
+﻿<Application x:Class="DatabaseProjectB.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DatabaseProjectB"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+       
+            <LinearGradientBrush x:Key="HeaderBrush">
+                <GradientStop Color="#457b9d"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="HeaderBorderBrush">
+                <GradientStop Color="White"/>
+            </LinearGradientBrush>
+
+            <!-- Full DataGrid Style -->
+            <Style x:Key="DataGridStyle" TargetType="{x:Type DataGrid}">
+                <Setter Property="ColumnHeaderStyle" Value="{DynamicResource HeaderStyle}"/>
+                <Setter Property="RowStyle" Value="{DynamicResource RowStyle}"/>
+                <Setter Property="RowHeaderWidth" Value="0" />
+                <Setter Property="MaxHeight" Value="260" />
+            </Style>        
+
+            <!--Column Header Style-->
+            <Style x:Key="HeaderStyle" TargetType="DataGridColumnHeader">
+                <Setter Property="Background" Value="{StaticResource HeaderBrush}" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="BorderBrush" Value="{StaticResource HeaderBorderBrush}" />
+                <Setter Property="BorderThickness" Value="0.3" />
+                <Setter Property="SnapsToDevicePixels" Value="True" />
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="MinWidth" Value="100" />
+                <Setter Property="MinHeight" Value="40" />
+            </Style>
+
+            <!--Row Styles-->
+            <Style x:Key="RowStyle" TargetType="DataGridRow">
+                <Setter Property="BorderBrush" Value="{StaticResource HeaderBorderBrush}" />
+                <Setter Property="BorderThickness" Value="0.3" />
+                <Setter Property="SnapsToDevicePixels" Value="True" />
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="MinWidth" Value="30" />
+                <Setter Property="MinHeight" Value="40" />
+             </Style>
+    </Application.Resources>
+</Application>

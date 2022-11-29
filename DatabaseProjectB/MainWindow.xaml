@@ -1,0 +1,47 @@
+﻿<Window x:Class="DatabaseProjectB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DatabaseProjectB"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Reports" Height="520" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="60"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="55.505"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="0" Grid.ColumnSpan="5" Background="#FF1B385C"></Border>
+        <Label Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" FontWeight="DemiBold" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10,0,0,0">Truck Rental Business</Label>
+        <StackPanel Orientation="Vertical" Background="#FF1B385C" Grid.Row="1" Grid.Column="0" Grid.RowSpan="8">
+            <Image  Grid.Column="0" Source="Images/tracking.png" Stretch="UniformToFill" Height="100px" Width="100px" Margin="0px 20px 0px 20px" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False" StretchDirection="Both"/>
+            <Button Name="topRentedTrucksButton" FontSize="15px" Margin="10px" Foreground="White" Background="#457b9d" Content="Top Rented Trucks" Width="150px" Height="45px" Click="topRentedTrucksButton_Click"/>
+            <Button Name="leastRentedModelsButton" FontSize="13px" Margin="10px" Foreground="White" Background="#457b9d" Content="Least Rented Models" Width="150px" Height="45px" Click="leastRentedModelsButton_Click"/>
+            <Button Name="totalRentalSaleForMonthButton" FontSize="13px" Margin="10px" Foreground="White" Background="#457b9d" Content="Month Total Sale" Width="150px" Height="45px" Click="totalRentalSaleForMonthButton_Click"/>
+            <Button Name="selectedDateRangeButton" FontSize="13px" Margin="10px" Foreground="White" Background="#457b9d" Content="Selected Date Range" Width="150px" Height="45px" Click="selectedDateRangeButton_Click"/>
+        </StackPanel>
+
+        <DockPanel Background="#FFF8F5F0"  Name="centralPanel"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="8" >
+
+        </DockPanel>
+
+    </Grid>
+</Window>
