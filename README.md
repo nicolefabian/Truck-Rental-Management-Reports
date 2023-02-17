@@ -1,8 +1,11 @@
-# Truck Rental Management System - desktop application
-A desktop application created with WPF, XAML, C#, SQL stored procedures, Entity Framework.
+# Truck Rental Management System
+A .NET 6.0 desktop application created with WPF, XAML, C#, SQL stored procedures, Entity Framework.
 
 ## Introduction
-This application displays 5 different reports from multiple entities that were showed using SQL stored procedures and  for Administrator Functionality
+This application displays 5 different reports from multiple entities that were showed using SQL stored procedures for Administrator Functionality.
+
+## Installation
+1. Clone repository
 
 ## Top Rented Trucks
 ![TopRentedTrucks](https://user-images.githubusercontent.com/102332600/219547972-00fbe127-98b3-445d-8a5c-3d509cad5e85.png)
