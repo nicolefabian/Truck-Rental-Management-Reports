@@ -2,7 +2,7 @@
 A .NET 6.0 desktop application created with WPF, XAML, C#, SQL stored procedures, Entity Framework.
 
 ## Introduction
-This application displays 5 different reports from multiple entities showed using SQL stored procedures for Administrator Functionality. 
+This application displays 4 different reports from multiple entities showed using SQL stored procedures for Administrator Functionality. 
 
 Packages installed:
 * Microsoft.EntityFrameworkCore (7.0)
