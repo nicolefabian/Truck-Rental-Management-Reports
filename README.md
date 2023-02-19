@@ -9,13 +9,6 @@ Packages installed:
 * Microsoft.EntityFramework.SqlServer (7.0)
 * Microsoft.EntityFramework.Tools (7.0)
 
-## Installation
-* Clone repository using this link:
-```
- https://github.com/nicolefabian/Truck-Rental-Management-Reports.git
- ```
- * Run MainWindows.xaml to start the application
-
 
 ## Top Rented Trucks
 ![TopRentedTrucks](https://user-images.githubusercontent.com/102332600/219547972-00fbe127-98b3-445d-8a5c-3d509cad5e85.png)
